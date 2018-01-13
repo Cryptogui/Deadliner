@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fi.jyu.mit.fxgui.ListChooser?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="408.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxDeadliner.DeadlinerGUIController">
+   <center>
+      <SplitPane dividerPositions="0.5755813953488372" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <center>
+                        <GridPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="120.0" prefWidth="294.0" BorderPane.alignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="193.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <DatePicker promptText="yyyy.mm.dd" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="Deadline" GridPane.rowIndex="1" />
+                              <Label text="Nimi" />
+                              <Label text="Prioriteetti" GridPane.rowIndex="2" />
+                              <TextField text="ITKP111 HT vaihe 2" GridPane.columnIndex="1" />
+                              <Label text="Lisätiedot:" GridPane.rowIndex="3" />
+                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                     </center>
+                     <bottom>
+                        <BorderPane prefHeight="257.0" prefWidth="294.0" BorderPane.alignment="CENTER">
+                           <center>
+                              <TextArea prefHeight="200.0" prefWidth="294.0" text="ITKP111 HT vaihe 2" BorderPane.alignment="CENTER" />
+                           </center>
+                           <bottom>
+                              <ButtonBar prefHeight="20.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                <buttons>
+                                  <Button mnemonicParsing="false" text="Tallenna" />
+                                </buttons>
+                              </ButtonBar>
+                           </bottom>
+                        </BorderPane>
+                     </bottom>
+                  </BorderPane>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <bottom>
+                        <ToolBar BorderPane.alignment="CENTER">
+                          <items>
+                            <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Lisää" />
+                              <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Poista" />
+                          </items>
+                           <padding>
+                              <Insets left="65.0" />
+                           </padding>
+                        </ToolBar>
+                     </bottom>
+                     <center>
+                        <ScrollPane prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+                           <content>
+                              <VBox spacing="3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <children>
+                                    <Button mnemonicParsing="false" prefWidth="200.0" text="ITKP111 HT Vaihe 2" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    <Button mnemonicParsing="false" prefWidth="200.0" text="muu tehtävä" />
+                                    <Button mnemonicParsing="false" prefWidth="200.0" text="2. muu tehtävä" />
+                                    <Button mnemonicParsing="false" prefWidth="200.0" text="3. muu tehtävä" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+   <left>
+      <SplitPane dividerPositions="0.09711286089238845" orientation="VERTICAL" prefHeight="326.0" prefWidth="190.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="188.0">
+               <children>
+                  <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.0" minWidth="10.0" prefWidth="41.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="147.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="36.0" text="Haku" />
+                        <TextField text="ITKP" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <VBox prefHeight="342.0" prefWidth="189.0">
+                     <children>
+                        <ListChooser prefHeight="122.0" prefWidth="189.0" rivit="ITKP111 HT vaihe 2&#10;ITKP102&#10;" />
+                        <TitledPane animated="false" prefHeight="307.0" prefWidth="188.0" text="Suodattimet">
+                           <content>
+                              <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                       <children>
+                                          <VBox prefHeight="200.0">
+                                             <children>
+                                                <CheckBox mnemonicParsing="false" text="Myöhässä" />
+                                                <CheckBox mnemonicParsing="false" text="Tärkeät" />
+                                                <CheckBox mnemonicParsing="false" text="Normaalit" />
+                                                <CheckBox mnemonicParsing="false" text="TeeJosEhdit" />
+                                                <CheckBox layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Aikaavievät" />
+                                                <CheckBox layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Helpot" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </content>
+                        </TitledPane>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </left>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

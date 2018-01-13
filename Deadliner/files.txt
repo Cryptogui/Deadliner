@@ -1,0 +1,38 @@
+﻿!https://tim.jyu.fi/view/kurssit/tie/ohj2/2017k/ht/maasjulk = Suunnitelma TIMissa
+
+kuvat/OHJ2_AloitusNakyma_e.png = piirretty vanha aloitusnäkymä
+kuvat/OHJ2_EiAukea_e.png       = piirretty vanha virhenäkymä
+kuvat/OHJ2_PaaNakyma_e.png     = piirretty vanha päänäkymä
+
+kuvat/PaaNakyma.png          = ohjelman paaikkuna
+kuvat/AloitusNakyma.png      = kuva tietoikkunasta joka ilmestyy ohjelman käynnistyessa
+kuvat/Virhe.png              = virheilmoitus jos poistaminen ei onnnistu jostain syysta
+kuvat/Poistaminen.png        = Vahvistuspyyntö tehtävää poistettaessa
+kuvat/Tallennus.png          = Haluatko tallentaa muutokset
+kuvat/Tietorakenne.png       = Tietorakennekuva
+
+src/fxDeadliner/DeadlinerMain.java					= ohjelman käynnistävä pääluokka
+src/fxDeadliner/DeadlinerGUIController.java			= ohjain joka käsittelee käyttöliittymästä tulevat tapahtumat
+src/fxDeadliner/DeadlinerPoistaminenController.java = tehtävän poistamis ikkunan ohjain
+src/fxDeadliner/DeadlinerStartUpController.java		= aloitusnäytön eli tietonäytön ohjain
+src/fxDeadliner/DeadlinerTallennusController.java	= ei käytetty
+src/fxDeadliner/DeadlinerVirheController.java		= ei käytetty
+
+src/fxDeadliner/Deadliner.css				= tyylitiedosto
+src/fxDeadliner/DeadlinerGUI.fxml			= pääikkuna
+src/fxDeadliner/DeadlinerPoistaminen.fxml	= poistamisen varmistus
+src/fxDeadliner/DeadlinerStartUp.fxml		= aloitus eli tietoikkuna
+src/fxDeadliner/DeadlinerVirhe.fxml			= virheikkuna (ei käytetty)
+
+src/deadliner/Kalenteri.java 	= välittää pyynnöt jäsenet ja prioriteetit luokille
+src/deadliner/Poikkeus.java		= poikkeusluokka
+src/deadliner/Prioriteetit.java	= prioriteettien käsittely
+src/deadliner/Prioriteetti.java	= prioriteetti joka osaa huolehtia omista tiedoistaan
+src/deadliner/Tehtava.java		= tehtävä joka osaaa huolehtia omista tiedoistaan
+src/deadliner/Tehtavat.java		= tehtävien käsittely
+
+prioriteetit.dat = prioriteetit sisältävä tiedosto
+tehtavat.dat     = tehtävät sisältävä tiedosta
+
+Deadliner.jar = ajettava ohjelma
+build.xml
